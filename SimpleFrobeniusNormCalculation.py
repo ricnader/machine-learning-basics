@@ -1,5 +1,3 @@
-# By Ricardo Nader - 21062023
-
 # It's analog to the L^2 norm for vectors.
 # It's root of the sum of all squared numbers of an array
 

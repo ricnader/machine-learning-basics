@@ -1,5 +1,3 @@
-# By Ricardo Nader - 16062023
-
 # If we have two vectors (say, x and y) with the same length n, we can calculate the dot product between them. This is annotated several different ways, including the following:
 
 # x⋅y 

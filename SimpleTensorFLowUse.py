@@ -1,5 +1,3 @@
-# By Ricardo Nader - 06102023
-
 # -->PyTorch and TensorFlow are the two most popular automatic differentiation libraries (a focus of the Calculus I and Calculus II subjects 
 # in the ML Foundations series) in Python, itself the most popular programming language in ML
 

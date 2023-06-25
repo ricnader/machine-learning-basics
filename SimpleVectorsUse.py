@@ -1,5 +1,3 @@
-# By Ricardo Nader - 06102023
-
 # Vectors (Rank 1 Tensors) in NumPy
 
 import numpy as np

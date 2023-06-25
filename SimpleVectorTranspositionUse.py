@@ -1,6 +1,3 @@
-# By Ricardo Nader - 16062023
-
-import torch
 import numpy as np
 
 

@@ -1,12 +1,8 @@
-# By Ricardo Nader - 22062023
-
 # identity matrices are composed only by 1s and 0s. 
 # In an operation with any other type of vector/matrix 
 # the result will be equals to the non identity vector/matrix
 
 import torch
-
-
 
 print("- Defining identity matrix")
 X_idt = torch.tensor([[1,0,0],[0,1,0],[0,0,1]])
@@ -23,10 +19,3 @@ print(torch.matmul(X_idt,y))
 print("")
 
 
-# print("- Transposing matrix")
-# X_trans = X_sym.T
-# print("")
-
-# print("- Even after transposed, the elements are still in their places")
-# print(X_sym == X_trans)
-# print("")

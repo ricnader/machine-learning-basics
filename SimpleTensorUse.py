@@ -1,5 +1,3 @@
-# By Ricardo Nader - 06102023
-
 # SCALARS IN TENSOR FLOW
 # Tensors created with a weapper
 # tf.Variable

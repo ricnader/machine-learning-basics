@@ -1,5 +1,3 @@
-# By Ricardo Nader - 1606023
-
 # Calculating the sum across all elements of a tensor is a common operation. For example:
 
 # For vector x of length n, we calculate  ∑ni=1xi 
