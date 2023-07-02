@@ -1,3 +1,5 @@
+# Not graphically Functional yet 
+
 import numpy as np
 import matplotlib.pyplot as plt
 
