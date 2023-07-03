@@ -1,59 +1,37 @@
-# det(X) = product of all eigenvalues of X
+# The eigendecomposition of some matrix  A  is
+# A=VΛV−1  (Λ being uppercase lambda)
 
-# |det(X)| quantifies volume change as a result of applying X:
-# - If det(X) = 0, then X collapses space completely in at least
-#   one dimension, thereby elimination all volume. In this case
-#   we'll be dealing with a singular matrix (with paralel or infinite results)
-#
-# - If 0 < |det(X)| < 1 then X contracts volume to some extent
-# - If |det(X)| = 1 then X preserves volume exactly
-# - If |det(X)| > 1 then X expands volume
+# Where:
+
+# - As in examples above,  V  is the concatenation of all
+# the eigenvectors of  A
+# - Λ  (upper-case  λ ) is the diagonal matrix diag( λ ).
+# Note that the convention is to arrange the lambda values
+# in descending order; as a result, the first eigenvalue
+# (and its associated eigenvector) may be a primary
+# characteristic of the matrix  A .
 
 import numpy as np
 
-print("- Defining matrix X")
-X = np.array([[4, 2], [-5, -3]])
-print(X)
+print("- Defining matrix A")
+A = np.array([[4, 2], [-5, -3]])
+print(A)
 print("")
 
-print("- Calculating the determinant of X")
-detX = np.linalg.det(X)
-print(detX)
-print("")
-
-print("- Defining a basis vector composed matrix B")
-B = np.array([[1, 0], [0, 1]])
-print(B)
-print("")
-
-print("- Defining a singular matrix N")
-N = np.array([[-4, 1], [-8, 2]])
-print(N)
-print("")
-
-print("- Calculating the determinant of N")
-detN = np.linalg.det(N)
-print(detN)
-print("")
-
-print("- Applying N to B")
-NB = np.dot(N, B)
-print(NB)
-print("")
-
-print("- Calculating EigenValues from N")
-lambdas, V = np.linalg.eig(N)
-# If any one of a matrix's eigenvalues is zero,
-# then the product of the eigenvalues must be zero and the
-# determinant must also be zero.
-print("- EigenValues:")
-print(lambdas)
-print("")
-print("- EigenVectors")
+print("- Calculating EigenVectors from A")
+lambdas, V = np.linalg.eig(A)
 print(V)
+
+print("- Inverting EigenVector")
+Vinv = np.linalg.inv(V)
+print(Vinv)
 print("")
 
+print("- Creating diagonal matrix (Λ) from eigenValues")
+Lambda = np.diag(lambdas)
+print(Lambda)
+print("")
 
-T = np.array([[3, 0], [8, -1]])
-v = np.array([1, 2])
-print(np.dot(T, v))
+print("- Confirm that A=VΛV−1 (It has to be equal to initial Matrix A):")
+print(np.dot(V, np.dot(Lambda, Vinv)))
+print("")
