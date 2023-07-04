@@ -1,3 +1,5 @@
+# ONLY APPLICABLE TO SQUARE MATRICES
+
 # The eigendecomposition of some matrix  A  is
 # A=VΛV−1  (Λ being uppercase lambda)
 
@@ -27,6 +29,10 @@ Vinv = np.linalg.inv(V)
 print(Vinv)
 print("")
 
+print("- Current lambdas")
+print(lambdas)
+print("")
+
 print("- Creating diagonal matrix (Λ) from eigenValues")
 Lambda = np.diag(lambdas)
 print(Lambda)
@@ -35,3 +41,5 @@ print("")
 print("- Confirm that A=VΛV−1 (It has to be equal to initial Matrix A):")
 print(np.dot(V, np.dot(Lambda, Vinv)))
 print("")
+
+
