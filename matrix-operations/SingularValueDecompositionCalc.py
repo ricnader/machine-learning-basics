@@ -1,6 +1,6 @@
 # As on slides, SVD of matrix  A  is:
 
-# A=UDVT
+# A=UDVT( V transposed)
 
 # Where:
 

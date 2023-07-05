@@ -7,7 +7,7 @@
 
 import torch as tr
 
-print("- Defining matrix A")
+print("- Defining matrix P")
 P = tr.tensor([[4, 2], [-5, -3.]])
 print(P)
 print("")
@@ -15,6 +15,7 @@ print("")
 print("- Calculating EigenVectors from P")
 lambdas, V = tr.linalg.eig(P)
 print(V)
+print("")
 
 print("- Inverting EigenVector")
 Vinv = tr.linalg.inv(V)
