@@ -1,3 +1,5 @@
+#Ricardo Nader 20230907
+
 # An eigenvector (eigen is German for "typical"; 
 # we could translate eigenvector to "characteristic vector") 
 # is a special vector  v  such that when it is transformed by some matrix 

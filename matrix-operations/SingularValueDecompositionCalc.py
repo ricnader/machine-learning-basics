@@ -1,3 +1,5 @@
+# Ricardo Nader 20230907
+
 # As on slides, SVD of matrix  A  is:
 
 # A=UDVT( V transposed)

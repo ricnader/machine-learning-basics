@@ -1,3 +1,5 @@
+#Ricardo Nader 20230907
+
 # identity matrices are composed only by 1s and 0s. 
 # In an operation with any other type of vector/matrix 
 # the result will be equals to the non identity vector/matrix

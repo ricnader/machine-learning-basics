@@ -1,3 +1,5 @@
+#Ricardo Nader 20230907
+
 # det(X) = product of all eigenvalues of X
 
 # (For 2x2 matrices)

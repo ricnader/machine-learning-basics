@@ -1,3 +1,5 @@
+#Ricardo Nader 20230907
+
 # det(X) = product of all eigenvalues of X
 
 # |det(X)| quantifies volume change as a result of applying X:

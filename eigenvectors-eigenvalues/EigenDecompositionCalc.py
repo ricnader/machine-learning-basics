@@ -1,3 +1,5 @@
+# Ricardo Nader 20230907
+
 # ONLY APPLICABLE TO SQUARE MATRICES
 
 # The eigendecomposition of some matrix  A  is
@@ -41,5 +43,3 @@ print("")
 print("- Confirm that A=VΛV−1 (It has to be equal to initial Matrix A):")
 print(np.dot(V, np.dot(Lambda, Vinv)))
 print("")
-
-

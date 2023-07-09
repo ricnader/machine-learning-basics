@@ -1,3 +1,5 @@
+#Ricardo Nader 20230907
+
 #A regression model may have n number of equations. In this example we'll have 2.
 # 4b + 2c = 4
 #-5b - 3c = -7
