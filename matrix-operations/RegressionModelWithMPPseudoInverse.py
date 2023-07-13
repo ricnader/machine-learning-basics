@@ -2,13 +2,18 @@
 
 # w= x+(Pseudoinverted)y
 
+# FOR THESE MAKE SURE THE NEW VSC PLUGIN FOR
+# JUPYTER IS PROPERLY INSTALLED
 
 # In this example X is a non square matrix of features is used as
 # an input of # drug dosages being used together with the level
 # of memory recovery  for alzheimer patients.
 
-# x1 = [0, 1, 2, 3, 4, 5, 6, 7.] E.g.: Dosage of drug for treating Alzheimer's disease
-# y = [1.86, 1.31, .62, .33, .09, -.67, -1.23, -1.37]  E.g.: Patient's memory recovery
+# x1 = [0, 1, 2, 3, 4, 5, 6, 7.]
+# E.g.: Dosage of drug for treating Alzheimer's disease
+
+# y = [1.86, 1.31, .62, .33, .09, -.67, -1.23, -1.37]
+# E.g.: Patient's memory recovery
 
 # Goal is to get a prediction of sucess given a determined dosage.
 
