@@ -22,11 +22,10 @@ print(tr.trace(A_p))
 print("")
 
 print("Using frobenius norm")
-
-
-Z = tr.cat((A_p, tr.tensor([[0, 0, 0]]).T), 1)
-
-print(Z.size)
-# z = (Z * A_p.T)
-# print(tr.norm(z, p='fro'))
-# print("")
+Z = tr.cat((A_p, tr.tensor([[0, 0, 0]]).T), -1)
+ZT = tr.cat((A_p.T, tr.tensor([[0, 0, 0]])), 0)
+# print(A_p.T)
+# print(Z)
+# print(ZT)
+z = (Z * ZT)
+print(tr.sqrt(tr.trace(z)))
