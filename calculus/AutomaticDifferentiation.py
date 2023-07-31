@@ -8,8 +8,9 @@
 # Distinct from classical methods
 #   - Numerical diff.(delta method; Introduces rounding errors)
 #   - Symbolic diff. (algebraic rules; computationally inefficient)
+
 # Relative to classical methods, better handles:
-#   - Funcions with many inputs (common in ML)
+#   - Functions with many inputs (common in ML)
 #   - Higher-order derivatives
 
 # TensorFlow and PyTorch are the two most popular automatic differentiation libraries.
