@@ -1,9 +1,3 @@
-#  Here we'll use the PyTorch automatic differentiation library to fit a 
-# straight line to data points. 
-# Thus, here we use calculus to solve the same regression 
-# problem that we used the Moore-Penrose Pseudoinverse example
-
-
 import torch
 import matplotlib.pyplot as plt
 
@@ -12,21 +6,11 @@ x = torch.tensor([0, 1, 2, 3, 4, 5, 6, 7.]) # E.g.: Dosage of drug for treating 
 print(x)
 print("")
 
-# The y values were created using the equation of a line  
-# y=mx+b. 
-# This way, we know what the model parameters to be learned are, 
-# say,  m=−0.5  and  b=2 . Random, normally-distributed noise has 
-# been added to simulate sampling error:
-
-# y = -0.5*x + 2 + torch.normal(mean=torch.zeros(8), std=0.2)
-
-# For reproducibility of this demo, 
-# here's a fixed example of y values obtained by running the commented-out line above:
 
 print("Defining y sample vector")
-y = torch.tensor([1.86, 1.31, .62, .33, .09, -.67, -1.23, -1.37]) # E.g.: Patient's "forgetfulness score"
+y = -0.5*x + 2 + torch.normal(mean=torch.zeros(8), std=0.8)
 print(y)
-print("")
+
 
 print("Showing points corresponding according to our actual data")
 fig, ax = plt.subplots()
@@ -34,17 +18,15 @@ plt.title("Clinical Trial")
 plt.xlabel("Drug dosage (mL)")
 plt.ylabel("Forgetfulness")
 _ = ax.scatter(x, y)
+
 print("")
 
-#Even knowing that we could do this same operation with other tools
-#like Moore-Penrose Pseudo Inverse or with statistics, for this
-#scenario in real life we might have to deal with hundreds of thousands
-# elements/parameters, so this solution is way more scalable
 
 print("-------------------------------------")
 print("Defining random entries for m and b so that the system "
       "can find the more aproximate value to real data")
 print("")
+
 print("Defining slope m")
 m = torch.tensor([0.9]).requires_grad_()
 print(m)
@@ -52,8 +34,6 @@ print(m)
 print("Defining slope y-intercept b")
 b = torch.tensor([0.1]).requires_grad_()
 print(b)
-
-
 
 print("Defining function for finding y for every ocurrence")
 def regression(my_x, my_m, my_b):
