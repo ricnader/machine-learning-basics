@@ -6,8 +6,6 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
-import torch
-import math # for constant pi
 
 def f(my_x,my_y):
   return my_x**2 - my_y**2
