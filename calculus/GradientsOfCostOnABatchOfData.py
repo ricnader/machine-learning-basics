@@ -58,6 +58,7 @@ C.backward()
 print("Gradient of m: ",m.grad)
 print(m.grad)
 print("")
+
 # --  Define the partial derivative of  C with respect to b  ( ∂C/∂b )
 print("Gradient of b: ",b.grad)
 print(b.grad)
