@@ -20,6 +20,7 @@ def my_fxn(my_x):
 y = my_fxn(x)
 
 
+
 fig, ax = plt.subplots()
 plt.axvline(x=0, color='lightgray')
 plt.axhline(y=0, color='lightgray')
